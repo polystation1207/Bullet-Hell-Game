@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 135005896}
   - component: {fileID: 135005895}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,8 +229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228.62146, y: 214.37714}
-  m_SizeDelta: {x: 643.7572, y: 89.2458}
+  m_AnchoredPosition: {x: -366.34, y: 214.38}
+  m_SizeDelta: {x: 368.3279, y: 89.2458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135005895
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Health:'
+  m_text: 'Health: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40e45db4a433410479d5e7d372482084, type: 2}
   m_sharedMaterial: {fileID: 3571319535356534907, guid: 40e45db4a433410479d5e7d372482084, type: 2}
@@ -279,8 +279,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 549004815}
   - component: {fileID: 549004814}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,6 +729,7 @@ GameObject:
   - component: {fileID: 970341872}
   - component: {fileID: 970341875}
   - component: {fileID: 970341876}
+  - component: {fileID: 970341877}
   m_Layer: 0
   m_Name: Player PH
   m_TagString: Player
@@ -862,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487a3f19fae7e734b8aebc8cbf5a5ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 38
 --- !u!114 &970341876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,10 +877,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1669247449}
-  shootSpeed: 10
-  bulletLifetime: 2
+  shootSpeed: 70
+  bulletLifetime: 5
   timer: 0
   mouseShoot: 1
+--- !u!114 &970341877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970341869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561766d99d60de6419e87e6c9b485535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  myText: {fileID: 135005895}
 --- !u!1 &1176030543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1075,7 @@ GameObject:
   - component: {fileID: 1763106461}
   - component: {fileID: 1763106460}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Bullet Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,8 +1098,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307.25848, y: -234}
-  m_SizeDelta: {x: 486.483, y: 50}
+  m_AnchoredPosition: {x: 247.8, y: -225.42}
+  m_SizeDelta: {x: 605.403, y: 67.1668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763106460
 MonoBehaviour:
@@ -1106,7 +1121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bullet Count:'
+  m_text: 'Bullet Count: 480'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40e45db4a433410479d5e7d372482084, type: 2}
   m_sharedMaterial: {fileID: 3571319535356534907, guid: 40e45db4a433410479d5e7d372482084, type: 2}
@@ -1133,8 +1148,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
