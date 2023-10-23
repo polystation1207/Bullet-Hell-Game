@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-
 	// Use this for initialization
 	void Start()
 	{
@@ -42,6 +41,7 @@ public class PauseMenu : MonoBehaviour
 	public void LoadMainMenu()
 	{
 		Time.timeScale = 1;
-		SceneManager.LoadScene("MainMenu");
+		GetComponent<Canvas>().enabled = false;
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 	}
 }
