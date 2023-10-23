@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int health = 10;
     [SerializeField] TextMeshProUGUI myText;
+    [SerializeField] float loadDelay = 1;
     int maxHealth = 100;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,6 +15,10 @@ public class PlayerHealth : MonoBehaviour
         {
             health--;
             myText.text = "Health: " + health;
+            if (health <= 0)
+            {
+                Invoke("ReloadScene", loadDelay);
+            }
         }
     }
 
@@ -22,9 +28,13 @@ public class PlayerHealth : MonoBehaviour
         {
             health--;
             myText.text = "Health: " + health;
+            if (health <= 0)
+            {
+                Invoke("ReloadScene", loadDelay);
+            }
         }
 
-        if (collision.gameObject.tag == "Health Pack" && health < maxHealth)
+        if (collision.gameObject.tag == "Med Kit" && health < maxHealth)
         {
             health += 10;
             if (health > maxHealth)
@@ -34,6 +44,11 @@ public class PlayerHealth : MonoBehaviour
             myText.text = "Health: " + health;
             Destroy(collision.gameObject);
         }
+    }
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(0);
     }
     // Start is called before the first frame update
     void Start()
