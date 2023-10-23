@@ -7,7 +7,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] GameObject prefab;
     [SerializeField] float shootSpeed = 10;
     [SerializeField] float bulletLifetime = 2;
-    [SerializeField] float timer = 0;
+    [SerializeField] float timer = 1;
     [SerializeField] bool mouseShoot = true;
     float x = 2;
     float y = 0;
@@ -41,7 +41,7 @@ public class PlayerShooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             // I have pressed the fire button
-            timer = 0;
+            timer = 1;
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y) * shootSpeed;
             Destroy(bullet, bulletLifetime);
