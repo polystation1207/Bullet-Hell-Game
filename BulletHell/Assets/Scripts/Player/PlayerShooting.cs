@@ -20,6 +20,8 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float tempX = Input.GetAxisRaw("Horizontal");
+        float tempY = Input.GetAxisRaw("Vertical");
         if (mouseShoot)
         {
             Vector3 mousePosition = Input.mousePosition;
@@ -30,9 +32,7 @@ public class PlayerShooting : MonoBehaviour
             x = shootDir.x;
             y = shootDir.y;
         }
-        float tempX = Input.GetAxisRaw("Horizontal");
-        float tempY = Input.GetAxisRaw("Vertical");
-        if (tempX != 0 || tempY != 0)
+        else if (tempX != 0 || tempY != 0)
         {
             x = tempX;
             y = tempX;
