@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - Player Bullet
+  - Walls
+  - Enemy Bullet
+  - Med Kit
+  - Ammo Crate
+  - Max Ammo
   layers:
   - Default
   - TransparentFX
