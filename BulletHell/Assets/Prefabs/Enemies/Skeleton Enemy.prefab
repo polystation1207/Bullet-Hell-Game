@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8328366868833508634}
   - component: {fileID: 8328366868833508837}
-  - component: {fileID: 8328366868833508635}
   - component: {fileID: 8328366868833508633}
   - component: {fileID: 8328366868833508638}
   - component: {fileID: 8328366868833508639}
   - component: {fileID: -7180121737180171816}
   - component: {fileID: -4122241517795124278}
+  - component: {fileID: 1689185542}
   m_Layer: 0
   m_Name: Skeleton Enemy
   m_TagString: Enemy
@@ -90,21 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8328366868833508635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8328366868833508836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 318f60ef1fea0e04c80cf5ff5b4f0bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
-  chaseDistance: 5
-  moveSpeed: 3
 --- !u!50 &8328366868833508633
 Rigidbody2D:
   serializedVersion: 4
@@ -138,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8439c65f09176a4e9d96605320c57ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDelay: 1.2
+  shootDelay: 0.35
   shootRange: 10
   bulletSpeed: 30
   prefab: {fileID: 3183942543275245702, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
@@ -207,3 +192,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2063198, y: 1.3585199}
   m_EdgeRadius: 0
+--- !u!114 &1689185542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328366868833508836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318f60ef1fea0e04c80cf5ff5b4f0bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
+  chaseDistance: 2
+  moveSpeed: 10
