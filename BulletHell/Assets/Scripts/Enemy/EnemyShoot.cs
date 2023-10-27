@@ -14,6 +14,14 @@ public class EnemyShoot : MonoBehaviour
     [SerializeField] bool predictiveShoot = true;
     [SerializeField] float predictiveLead = 1;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Walls")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
