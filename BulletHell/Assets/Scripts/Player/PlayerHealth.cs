@@ -5,10 +5,10 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int health = 10;
+    [SerializeField] int health = 6;
     [SerializeField] TextMeshProUGUI myText;
     [SerializeField] float loadDelay = 1;
-    int maxHealth = 100;
+    int maxHealth = 6;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.gameObject.tag == "Med Kit" && health < maxHealth)
         {
-            health += 10;
+            health += 3;
             if (health > maxHealth)
             {
                 health = maxHealth;

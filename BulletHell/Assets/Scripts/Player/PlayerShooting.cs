@@ -5,23 +5,42 @@ using TMPro;
 
 public class PlayerShooting : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI myText;
     [SerializeField] GameObject prefab;
     [SerializeField] float shootSpeed = 10;
     [SerializeField] float bulletLifetime = 2;
     [SerializeField] float timer = 1;
     [SerializeField] bool mouseShoot = true;
-    [SerializeField] TextMeshProUGUI myText;
-    [SerializeField] int bulletCount = 40;
-    int maxBulletCount = 400;
+    [SerializeField] int bulletCount = 200;
+    int maxBulletCount = 200;
     float x = 2;
     float y = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Ammo Crate" && bulletCount < maxBulletCount)
-            bulletCount += 40;
+        if (collision.gameObject.tag == "Max Ammo" && bulletCount < maxBulletCount)
+        {
+            bulletCount += 200;
+            if (bulletCount > maxBulletCount)
+            {
+                bulletCount = maxBulletCount;
+            }
             myText.text = "Bullet Count: " + bulletCount;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.tag == "Ammo Crate" && bulletCount < maxBulletCount)
+        {
+            bulletCount += 40;
+            if (bulletCount > maxBulletCount)
+            {
+                bulletCount = maxBulletCount;
+            }
+            myText.text = "Bullet Count: " + bulletCount;
+            Destroy(collision.gameObject);
+        }
     }
+
     // Start is called before the first frame update
     void Start()
     {
