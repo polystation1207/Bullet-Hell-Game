@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 170
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,10 +108,10 @@ TextureImporter:
       name: Bull Ett color_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 680
-        width: 170
-        height: 170
+        x: 70
+        y: 690
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: Bull Ett color_1
       rect:
         serializedVersion: 2
-        x: 170
-        y: 680
-        width: 170
-        height: 170
+        x: 240
+        y: 690
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: Bull Ett color_2
       rect:
         serializedVersion: 2
-        x: 340
-        y: 680
-        width: 170
-        height: 170
+        x: 410
+        y: 685
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Bull Ett color_3
       rect:
         serializedVersion: 2
-        x: 510
-        y: 680
-        width: 170
-        height: 170
+        x: 580
+        y: 690
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Bull Ett color_4
       rect:
         serializedVersion: 2
-        x: 680
-        y: 680
-        width: 170
-        height: 170
+        x: 750
+        y: 690
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: Bull Ett color_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 510
-        width: 170
-        height: 170
+        x: 70
+        y: 520
+        width: 80
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: Bull Ett color_6
       rect:
         serializedVersion: 2
-        x: 170
-        y: 510
-        width: 170
-        height: 170
+        x: 240
+        y: 520
+        width: 80
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: Bull Ett color_7
       rect:
         serializedVersion: 2
-        x: 340
-        y: 510
-        width: 170
-        height: 170
+        x: 410
+        y: 520
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Bull Ett color_8
       rect:
         serializedVersion: 2
-        x: 510
-        y: 510
-        width: 170
-        height: 170
+        x: 580
+        y: 520
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: Bull Ett color_9
       rect:
         serializedVersion: 2
-        x: 680
-        y: 510
-        width: 170
-        height: 170
+        x: 750
+        y: 520
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: Bull Ett color_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 340
-        width: 170
-        height: 170
+        x: 70
+        y: 350
+        width: 80
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: Bull Ett color_11
       rect:
         serializedVersion: 2
-        x: 170
-        y: 340
-        width: 170
-        height: 170
+        x: 240
+        y: 350
+        width: 80
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: Bull Ett color_12
       rect:
         serializedVersion: 2
-        x: 340
-        y: 340
-        width: 170
-        height: 170
+        x: 410
+        y: 350
+        width: 80
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: Bull Ett color_13
       rect:
         serializedVersion: 2
-        x: 510
-        y: 340
-        width: 170
-        height: 170
+        x: 580
+        y: 350
+        width: 80
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,10 +402,10 @@ TextureImporter:
       name: Bull Ett color_14
       rect:
         serializedVersion: 2
-        x: 680
-        y: 340
-        width: 170
-        height: 170
+        x: 720
+        y: 350
+        width: 110
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,10 +423,10 @@ TextureImporter:
       name: Bull Ett color_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 170
-        width: 170
-        height: 170
+        x: 20
+        y: 180
+        width: 130
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: Bull Ett color_16
       rect:
         serializedVersion: 2
-        x: 170
-        y: 170
-        width: 170
-        height: 170
+        x: 190
+        y: 180
+        width: 130
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +465,10 @@ TextureImporter:
       name: Bull Ett color_17
       rect:
         serializedVersion: 2
-        x: 340
-        y: 170
-        width: 170
-        height: 170
+        x: 355
+        y: 260
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: Bull Ett color_18
       rect:
         serializedVersion: 2
-        x: 510
-        y: 170
-        width: 170
-        height: 170
+        x: 370
+        y: 180
+        width: 140
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: Bull Ett color_19
       rect:
         serializedVersion: 2
-        x: 680
-        y: 170
-        width: 170
-        height: 170
+        x: 580
+        y: 180
+        width: 100
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: Bull Ett color_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 170
-        height: 170
+        x: 745
+        y: 180
+        width: 90
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +549,10 @@ TextureImporter:
       name: Bull Ett color_21
       rect:
         serializedVersion: 2
-        x: 170
-        y: 0
-        width: 170
-        height: 170
+        x: 360
+        y: 245
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: Bull Ett color_22
       rect:
         serializedVersion: 2
-        x: 340
-        y: 0
-        width: 170
-        height: 170
+        x: 65
+        y: 10
+        width: 90
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +591,10 @@ TextureImporter:
       name: Bull Ett color_23
       rect:
         serializedVersion: 2
-        x: 510
-        y: 0
-        width: 170
-        height: 170
+        x: 235
+        y: 10
+        width: 90
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,6 +604,48 @@ TextureImporter:
       bones: []
       spriteID: b4d21e734fc026749820407534973727
       internalID: -1909367875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bull Ett color_24
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 10
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94cfbe7789f8b741ba9543b97ce7a87
+      internalID: -761308984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bull Ett color_25
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 75
+        width: 85
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b42528dd132c3f48ac9b5eccb602455
+      internalID: 743423262
       vertices: []
       indices: 
       edges: []
@@ -636,6 +678,8 @@ TextureImporter:
       Bull Ett color_21: 1142383994
       Bull Ett color_22: 200194064
       Bull Ett color_23: -1909367875
+      Bull Ett color_24: -761308984
+      Bull Ett color_25: 743423262
       Bull Ett color_3: -2089736648
       Bull Ett color_4: 2030028915
       Bull Ett color_5: 663043911

@@ -12,6 +12,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] float timer = 1;
     [SerializeField] bool mouseShoot = true;
     [SerializeField] int bulletCount = 200;
+    [SerializeField] bool playerShoot = true;
     int maxBulletCount = 200;
     float x = 2;
     float y = 0;
@@ -20,7 +21,7 @@ public class PlayerShooting : MonoBehaviour
     {
         if (collision.gameObject.tag == "Max Ammo" && bulletCount < maxBulletCount)
         {
-            bulletCount += 200;
+            bulletCount = 200;
             if (bulletCount > maxBulletCount)
             {
                 bulletCount = maxBulletCount;
@@ -52,6 +53,17 @@ public class PlayerShooting : MonoBehaviour
     {
         float tempX = Input.GetAxisRaw("Horizontal");
         float tempY = Input.GetAxisRaw("Vertical");
+
+        if (bulletCount <=0)
+        {
+            playerShoot = false;
+        }
+
+        else if (bulletCount >0)
+        {
+            playerShoot = true;
+        }
+
         if (mouseShoot)
         {
             Vector3 mousePosition = Input.mousePosition;
@@ -71,12 +83,15 @@ public class PlayerShooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             // I have pressed the fire button
-            bulletCount--;
-            myText.text = "Bullet Count: " + bulletCount;
-            timer = 1;
-            GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y) * shootSpeed;
-            Destroy(bullet, bulletLifetime);
+            if (playerShoot)
+            {
+                bulletCount--;
+                myText.text = "Bullet Count: " + bulletCount;
+                timer = 1;
+                GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+                bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y) * shootSpeed;
+                Destroy(bullet, bulletLifetime);
+            }
         }
     }
 }

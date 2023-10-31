@@ -10,13 +10,13 @@ public class TopDownMovement : MonoBehaviour
     float runSpeed = 5.0f;
 
     Vector2 moveInput;
-    Rigidbody2D myRigidbody;
     Animator myAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,25 +28,30 @@ public class TopDownMovement : MonoBehaviour
         rb.velocity = new Vector2(x, y) * runSpeed * Time.deltaTime * 60;
 
         Run();
+        FlipSprite();
 
     }
-
+    /*void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+        Debug.Log(moveInput);
+    }*/
     void Run()
     {
-        Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, myRigidbody.velocity.y);
-        myRigidbody.velocity = playerVelocity;
+        //Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed, rb.velocity.y);
+        //rb.velocity = playerVelocity;
 
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
 
     void FlipSprite()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+            transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
     }
 }
