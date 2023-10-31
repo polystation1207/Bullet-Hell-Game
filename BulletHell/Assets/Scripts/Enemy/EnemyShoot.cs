@@ -44,7 +44,8 @@ public class EnemyShoot : MonoBehaviour
             timer = 0;
             shootDirection.Normalize();
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
+            bullet.transform.up = shootDirection;
+            //bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
             Destroy(bullet, bulletLifetime);
         }
     }
