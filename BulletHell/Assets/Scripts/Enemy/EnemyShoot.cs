@@ -43,7 +43,7 @@ public class EnemyShoot : MonoBehaviour
                 shootDirection += playerVel * predictiveLead;
             }
             timer = 0;
-            myAnimator.SetBool("isShooting", true);
+            myAnimator.SetTrigger("isShooting");
             shootDirection.Normalize();
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             bullet.transform.up = shootDirection;
