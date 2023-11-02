@@ -13,6 +13,7 @@ public class EnemyShoot : MonoBehaviour
     float timer = 0;
     [SerializeField] bool predictiveShoot = true;
     [SerializeField] float predictiveLead = 1;
+    Animator myAnimator;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +26,7 @@ public class EnemyShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,10 +43,11 @@ public class EnemyShoot : MonoBehaviour
                 shootDirection += playerVel * predictiveLead;
             }
             timer = 0;
+            myAnimator.SetBool("isShooting", true);
             shootDirection.Normalize();
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             bullet.transform.up = shootDirection;
-            //bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
             Destroy(bullet, bulletLifetime);
         }
     }
