@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6281123755556662025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.1, y: 7.9, z: -1.1511168}
-  m_LocalScale: {x: 0.47261363, y: 0.44132248, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 2030028915, guid: 83786546d5b071147bcc48bffd7be33a, type: 3}
+  m_Sprite: {fileID: -1140894214, guid: 83786546d5b071147bcc48bffd7be33a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,18 +103,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.2500055, y: 0.002966404}
+  m_Offset: {x: -0.0037459135, y: -0.013143539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.7, y: 1.7}
+    oldSize: {x: 0.47058824, y: 0.85294116}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.806348, y: 1.5069835}
+  m_Size: {x: 0.4567349, y: 0.83997726}
   m_EdgeRadius: 0
 --- !u!50 &6281123755556662036
 Rigidbody2D:
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487a3f19fae7e734b8aebc8cbf5a5ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3.5
+  runSpeed: 5
 --- !u!114 &6281123755556662032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,13 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931374559a20f034581d3b3012130c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myText: {fileID: 0}
   prefab: {fileID: 5076920197136014469, guid: 15f725d54ef004f44bf361d3ec182668, type: 3}
   shootSpeed: 15
   bulletLifetime: 5
   timer: 1
   mouseShoot: 1
-  myText: {fileID: 0}
-  bulletCount: 40
+  bulletCount: 200
+  playerShoot: 1
 --- !u!114 &6281123755556662033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561766d99d60de6419e87e6c9b485535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 10000
   myText: {fileID: 0}
   loadDelay: 1
 --- !u!95 &6281123755556662034
