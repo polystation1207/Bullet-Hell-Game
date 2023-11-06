@@ -13,6 +13,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] bool mouseShoot = true;
     [SerializeField] int bulletCount = 200;
     [SerializeField] bool playerShoot = true;
+    [SerializeField] AudioClip shootingSound;
     int maxBulletCount = 200;
     float x = 2;
     float y = 0;
@@ -88,6 +89,7 @@ public class PlayerShooting : MonoBehaviour
                 bulletCount--;
                 myText.text = "Bullet Count: " + bulletCount;
                 timer = 1;
+                Camera.main.GetComponent<AudioSource>().PlayOneShot(shootingSound);
                 GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
                 bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(x, y) * shootSpeed;
                 Destroy(bullet, bulletLifetime);
