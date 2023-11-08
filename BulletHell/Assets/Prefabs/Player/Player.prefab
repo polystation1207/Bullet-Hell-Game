@@ -149,7 +149,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 487a3f19fae7e734b8aebc8cbf5a5ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dodgeRoll: 1
   runSpeed: 5
+  dodgeSpeed: 4
+  dodgeDelay: 1
+  dodgeDuration: 0.5
 --- !u!114 &6281123755556662032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +174,7 @@ MonoBehaviour:
   mouseShoot: 1
   bulletCount: 200
   playerShoot: 1
+  shootingSound: {fileID: 8300000, guid: 803394f03a3688147845a02368e2ed88, type: 3}
 --- !u!114 &6281123755556662033
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class ShellBruteShoot : MonoBehaviour
     float timer = 0;
     [SerializeField] bool predictiveShoot = true;
     [SerializeField] float predictiveLead = 1;
+    [SerializeField] AudioClip shellShootSound;
     Animator myAnimator;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,6 +45,7 @@ public class ShellBruteShoot : MonoBehaviour
             timer = 0;
             myAnimator.SetTrigger("isShooting");
             shootDirection.Normalize();
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(shellShootSound);
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             bullet.transform.up = shootDirection;
             Destroy(bullet, bulletLifetime);
