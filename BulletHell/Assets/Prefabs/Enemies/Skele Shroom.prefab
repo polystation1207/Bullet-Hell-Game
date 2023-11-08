@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -6346518108440688492}
   m_Layer: 0
   m_Name: Skele Shroom
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,9 +102,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000000
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -178,10 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8439c65f09176a4e9d96605320c57ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDelay: 0.5
+  shootDelay: 2.5
   shootRange: 7
   bulletSpeed: 2
-  prefab: {fileID: 3727009896708416576, guid: 2fa0edc128ecfd0418ba457fc3be8771, type: 3}
+  prefab: {fileID: 2433159136596692809, guid: 685ca702c53dd864d84d8592c96f4f3a, type: 3}
   target: {fileID: 0}
   bulletLifetime: 2
   predictiveShoot: 1
