@@ -13,6 +13,7 @@ public class EnemyShoot : MonoBehaviour
     float timer = 0;
     [SerializeField] bool predictiveShoot = true;
     [SerializeField] float predictiveLead = 1;
+    [SerializeField] AudioClip enemyShootSound;
     Animator myAnimator;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,6 +46,7 @@ public class EnemyShoot : MonoBehaviour
             timer = 0;
             myAnimator.SetTrigger("isShooting");
             shootDirection.Normalize();
+            Camera.main.GetComponent<AudioSource>().PlayOneShot(enemyShootSound);
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
             bullet.transform.up = shootDirection;
             bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletSpeed;
