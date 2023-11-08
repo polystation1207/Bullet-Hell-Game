@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318f60ef1fea0e04c80cf5ff5b4f0bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
   chaseDistance: 3
   moveSpeed: 2.5
 --- !u!114 &827664258576371516
@@ -182,7 +182,7 @@ MonoBehaviour:
   shootRange: 7
   bulletSpeed: 7
   prefab: {fileID: 3183942543275245702, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
   bulletLifetime: 2
   predictiveShoot: 1
   predictiveLead: 1
