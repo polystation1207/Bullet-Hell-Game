@@ -186,6 +186,7 @@ MonoBehaviour:
   bulletLifetime: 2
   predictiveShoot: 1
   predictiveLead: 1
+  enemyShootSound: {fileID: 8300000, guid: b2d1e026f8ff2d448911ed0e4be6bdaa, type: 3}
 --- !u!95 &2082086054
 Animator:
   serializedVersion: 5
