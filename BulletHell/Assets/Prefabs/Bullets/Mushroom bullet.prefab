@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7524213416330270655}
   - component: {fileID: 7609725470151058227}
   - component: {fileID: -4686915234478804875}
+  - component: {fileID: -4922155303415885016}
   m_Layer: 0
   m_Name: Mushroom bullet
   m_TagString: Enemy
@@ -123,3 +124,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-4922155303415885016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433159136596692809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87962cdc128d9b44db323ef6f6ef4bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

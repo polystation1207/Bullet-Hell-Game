@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 3
   myText: {fileID: 0}
+  prefab: {fileID: 0}
+  dropsItem: 0
 --- !u!114 &6764227658756458650
 MonoBehaviour:
   m_ObjectHideFlags: 0
