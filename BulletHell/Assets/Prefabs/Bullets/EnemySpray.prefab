@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4139172478867740619}
+  - component: {fileID: 5676619739405055567}
   m_Layer: 0
   m_Name: EnemySpray
   m_TagString: Untagged
@@ -36,6 +37,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5676619739405055567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279263210007188608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87962cdc128d9b44db323ef6f6ef4bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerUsed: 0
 --- !u!1001 &1339976947805904136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6035fdb1ff7467940b0d1bc2368d51f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 2
 --- !u!4 &7895753141150496183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154644085097490623, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
@@ -189,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6035fdb1ff7467940b0d1bc2368d51f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 2
 --- !u!4 &6325589356050388119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154644085097490623, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
@@ -268,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6035fdb1ff7467940b0d1bc2368d51f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 2
 --- !u!4 &5803709250861891200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154644085097490623, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
@@ -347,6 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6035fdb1ff7467940b0d1bc2368d51f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 2
 --- !u!4 &5548258864859022127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154644085097490623, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
@@ -431,3 +449,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6035fdb1ff7467940b0d1bc2368d51f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 2

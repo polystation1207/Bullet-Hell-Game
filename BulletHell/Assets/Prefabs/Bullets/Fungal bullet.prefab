@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6372556996152719418}
   - component: {fileID: -3141791281260962257}
   - component: {fileID: -6807097801781175184}
+  - component: {fileID: -3579670572628504543}
   m_Layer: 0
   m_Name: Fungal bullet
   m_TagString: Enemy
@@ -130,3 +131,15 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-3579670572628504543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3727009896708416576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87962cdc128d9b44db323ef6f6ef4bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

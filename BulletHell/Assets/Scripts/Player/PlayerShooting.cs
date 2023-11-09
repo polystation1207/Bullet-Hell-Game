@@ -33,7 +33,7 @@ public class PlayerShooting : MonoBehaviour
 
         else if (collision.gameObject.tag == "Ammo Crate" && bulletCount < maxBulletCount)
         {
-            bulletCount += 40;
+            bulletCount += 10;
             if (bulletCount > maxBulletCount)
             {
                 bulletCount = maxBulletCount;

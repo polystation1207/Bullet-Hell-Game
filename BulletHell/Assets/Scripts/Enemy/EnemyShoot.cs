@@ -16,14 +16,6 @@ public class EnemyShoot : MonoBehaviour
     [SerializeField] AudioClip enemyShootSound;
     Animator myAnimator;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Walls")
-        {
-            Destroy(collision.gameObject);
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
