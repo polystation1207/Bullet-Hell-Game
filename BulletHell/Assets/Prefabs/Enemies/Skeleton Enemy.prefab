@@ -152,6 +152,7 @@ MonoBehaviour:
   enemyHealth: 4
   myText: {fileID: 0}
   prefab: {fileID: 4296904689271929558, guid: fb40fa603636b2d459828f91d3c6694a, type: 3}
+  dropsItem: 1
 --- !u!114 &827664258576371519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,8 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318f60ef1fea0e04c80cf5ff5b4f0bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
-  chaseDistance: 3
+  player: {fileID: 0}
+  chaseDistance: 6
   moveSpeed: 2.5
 --- !u!114 &827664258576371516
 MonoBehaviour:
@@ -180,10 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 1
-  shootRange: 7
+  shootRange: 6
   bulletSpeed: 7
   prefab: {fileID: 3183942543275245702, guid: 18589a268d95b374f84e5e77581ea144, type: 3}
-  target: {fileID: 6281123755556662025, guid: bf459a023786b8644a5bc6a3e4c38709, type: 3}
+  target: {fileID: 0}
   bulletLifetime: 2
   predictiveShoot: 1
   predictiveLead: 1
