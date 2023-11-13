@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] TextMeshProUGUI myText;
     [SerializeField] GameObject prefab;
     [SerializeField] bool dropsItem = true;
+    [SerializeField] bool isBoss = false;
+    [SerializeField] bool isBossAlive = false; 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -20,6 +22,10 @@ public class EnemyHealth : MonoBehaviour
                 if (dropsItem == true)
                 {
                     GameObject crate = Instantiate(prefab, transform.position, Quaternion.identity);
+                }
+                if (isBoss == true)
+                {
+                    isBossAlive = false;
                 }
                 Destroy(gameObject);
             }
@@ -51,5 +57,10 @@ public class EnemyHealth : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public bool IsBossAlive()
+    {
+        return isBossAlive;
     }
 }
