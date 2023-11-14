@@ -10,8 +10,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject prefab;
     [SerializeField] bool dropsItem = true;
     [SerializeField] bool isBoss = false;
-    [SerializeField] bool isBossAlive = false; 
-
+    [SerializeField] bool isBossAlive = false;
+    [SerializeField] GameObject teleporter;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player Bullet")
@@ -25,6 +25,8 @@ public class EnemyHealth : MonoBehaviour
                 }
                 if (isBoss == true)
                 {
+                    teleporter.SetActive(true);
+                    Debug.Log("foo");
                     isBossAlive = false;
                 }
                 Destroy(gameObject);
@@ -43,22 +45,17 @@ public class EnemyHealth : MonoBehaviour
                 {
                     GameObject crate = Instantiate(prefab, transform.position, Quaternion.identity);
                 }
+                if (isBoss == true)
+                {
+                    teleporter.SetActive(true);
+                    Debug.Log("foo");
+                    isBossAlive = false;
+                }
                 Destroy(gameObject);
             }
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+ 
     public bool IsBossAlive()
     {
         return isBossAlive;
