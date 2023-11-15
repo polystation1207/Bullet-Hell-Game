@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         home = transform.position;
+        myRigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector3 playerPosition = player.transform.position;
         Vector3 moveDirection = playerPosition - transform.position;
+        FlipSprite();
         if (moveDirection.magnitude < chaseDistance)
         {
             moveDirection.Normalize();
@@ -37,6 +39,16 @@ public class EnemyMovement : MonoBehaviour
                 transform.position = home;
                 GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             }
+        }
+    }
+
+    void FlipSprite()
+    {
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+
+        if (playerHasHorizontalSpeed)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), -1f);
         }
     }
 }
