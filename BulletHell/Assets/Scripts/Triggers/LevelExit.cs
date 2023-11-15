@@ -9,8 +9,7 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        bool isBossAlive = GetComponent<EnemyHealth>().IsBossAlive();
-        if (collision.gameObject.tag == "Player" && isBossAlive == false)
+        if (collision.gameObject.tag == "Player")
         {
             StartCoroutine(LoadNextLevel1());
         }
