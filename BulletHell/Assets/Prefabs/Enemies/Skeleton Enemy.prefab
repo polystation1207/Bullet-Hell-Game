@@ -153,6 +153,9 @@ MonoBehaviour:
   myText: {fileID: 0}
   prefab: {fileID: 4296904689271929558, guid: fb40fa603636b2d459828f91d3c6694a, type: 3}
   dropsItem: 1
+  isBoss: 0
+  isBossAlive: 0
+  teleporter: {fileID: 0}
 --- !u!114 &827664258576371519
 MonoBehaviour:
   m_ObjectHideFlags: 0
