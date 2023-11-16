@@ -11,6 +11,7 @@ TagManager:
   - Med Kit
   - Max Ammo
   - Ammo Crate
+  - Level 4 secret
   layers:
   - Default
   - TransparentFX
