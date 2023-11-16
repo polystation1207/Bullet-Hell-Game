@@ -21,7 +21,7 @@ public class LevelExit : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (isLastLevel == true)
         {
-            SceneManager.LoadScene(7)
+            SceneManager.LoadScene(7);
         }
         else
         {
