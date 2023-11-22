@@ -9,18 +9,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] TextMeshProUGUI myText;
     [SerializeField] float loadDelay = 1;
     int maxHealth = 6;
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            health--;
-            myText.text = "Health: " + health;
-            if (health <= 0)
-            {
-                Invoke("ReloadScene", loadDelay);
-            }
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
