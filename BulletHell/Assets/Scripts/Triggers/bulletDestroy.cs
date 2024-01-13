@@ -13,6 +13,11 @@ public class bulletDestroy : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
+        }
+
         if (collision.gameObject.tag == "Player")
         {
             if (playerUsed == false)
